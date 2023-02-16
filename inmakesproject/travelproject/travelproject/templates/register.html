@@ -8,12 +8,12 @@
 <h1> Registeration </h1>
 <form action="register" method="post">
     {% csrf_token %}
-    <input type="text" name="username" placeholder="Enter your username"><br>
-    <input type="text" name="first_name" placeholder="Enter your first name"><br>
-    <input type="text" name="last_name" placeholder="Enter your last name"><br>
-    <input type="email" name="email" placeholder="Enter your email address"><br>
-    <input type="password" name="password" placeholder="Enter your password"><br>
-    <input type="password" name="password1" placeholder="Confirm your password"><br>
+    <input type="text" name="username" placeholder="Enter your username" required><br>
+    <input type="text" name="first_name" placeholder="Enter your first name" required><br>
+    <input type="text" name="last_name" placeholder="Enter your last name" required><br>
+    <input type="email" name="email" placeholder="Enter your email address" required><br>
+    <input type="password" name="password" placeholder="Enter your password" required><br>
+    <input type="password" name="password1" placeholder="Confirm your password" required><br>
     <input type="submit"><br>
 </form>
 {% for msg in messages %}
